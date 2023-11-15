@@ -13,6 +13,9 @@ function opentab(tabname){
   document.getElementById(tabname).classList.add("active-tab");
 }
 
+
+
+
 var sidemenu = document.getElementById("sidemenu")
 
 function openmenu(){
@@ -23,13 +26,24 @@ function closemenu(){
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxxEe_nDUDoIn630FkqhxLai0igFK4PfPkBAtiVK1p4hEiIjPcjqyL3LlIqXR_9D-tq5A/exec'
+
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzROLwm3tBHNxtI6bmdwrNUs82ELezs_cddeB8wMS04j81BCm4VB_YwCkqGKTV6TgSUmQ/exec'
 const form = document.forms['submit-to-google-sheet']
+
+const msg = document.getElementById("msg")
 
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response => {
+      msg.innerHTML ="Mensagem enviada com sucesso!"
+      setTimeout(function(){
+        msg.innerHTML = ""
+      },5000)
+      form.reset()
+    })
     .catch(error => console.error('Error!', error.message))
 })
 

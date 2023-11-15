@@ -386,3 +386,9 @@ nav .fa{
     font-size: 14px;
   }
 }
+
+#msg{
+  color: #00ffc8;
+  margin-top: -40px;
+  display: block;
+}
