@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio-Silvestre</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="img/logo silver dev-branc.png" alt="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <i class="fa fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Olá, sou</p>
+        <h1> Livancli Silvestre, <br> <span> Desenvolvedor Front-end</span></h1>
+      </div>
+    </div>
+  </div>
+<!------------------------ about --------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="img/userSilver.png">
+        </div>
+        <div class="about-col-1">
+          <h1 class="sub-title">Sobre</h1>
+          <p>Possuo formação em Sistemas de Informação, minhas habilidades técnicas abrangem o desenvolvimento web front-end, com experiência em HTML5, CSS3, JavaScript, Bootstrap, ReactJs, NextJs e jQuery. Possuo amplo conhecimento em lógica de programação essencial e domínio em ferramentas de design gráfico, incluindo o Photoshop. Mantenho um compromisso inabalável com a fidelidade à marca e a busca constante pela excelência na qualidade do trabalho.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experiência</p>
+            <p class="tab-links" onclick="opentab('education')">Educação</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designer Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>App Development</span><br>Building Android/ios apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2014 - 2023</span><br>Supervisor Técnico - UNIPAR</li>
+              <li><span>2019 - 2021</span><br>Team lead at starApp LLC.</li>
+              <li><span>2017 - 2019</span><br>Internship at ekart eCommerce.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br>Sistemas de Informação - UNIPAR</li>
+              <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+              <li><span>2014</span><br>MBA from ISM Banhalore.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------- serviços ------------------------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa fa-code"></i>
+          <h2>Web Designer</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dolore fuga voluptatem cumque quos molestias pariatur eveniet ex impedit repellendus omnis praesentium recusandae quidem. Quia at fugiat accusamus iusto? Qui.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+        <div>
+          <i class="fa fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dolore fuga voluptatem cumque quos molestias pariatur eveniet ex impedit repellendus omnis praesentium recusandae quidem. Quia at fugiat accusamus iusto? Qui.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+        <div>
+          <i class="fa fa-mobile"></i>
+          <h2>App Designer</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dolore fuga voluptatem cumque quos molestias pariatur eveniet ex impedit repellendus omnis praesentium recusandae quidem. Quia at fugiat accusamus iusto? Qui.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- -------------------Portfólio-------------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="img/work-1.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>The app connects you yo the talented people around the world. Downlod it from play store.</p>
+          <a href="#"><i class="fa fa-external-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/work-2.png">
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>The app connects you yo the talented people around the world. Downlod it from play store.</p>
+          <a href="#"><i class="fa fa-external-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/work-3.png">
+        <div class="layer">
+          <h3>Online Shopping App</h3>
+          <p>The app connects you yo the talented people around the world. Downlod it from play store.</p>
+          <a href="#"><i class="fa fa-external-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">Ver mais</a>
+  </div>
+</div>
+<!-- ---------------Contact------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa fa-paper-plane"></i> websilver83@gmail.com</p>
+        <p><i class="fa fa-phone"></i> (44)98409-3162</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+        <a href="./img/Livancli-cv.pdf" download class="btn btn2">Download Cv</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2023, <i class="fa fa-code"></i> SilverDev.</p>
+  </div>
+</div>
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
