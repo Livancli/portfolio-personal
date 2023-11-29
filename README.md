@@ -1,3 +1,5 @@
+![WORK012](https://github.com/Livancli/portfolio-personal/assets/66133816/95b6591a-9349-4890-a453-956975865e84)
+
 # Site do Portfólio - Livancli Silvestre
 Este repositório contém o código de um site de portfólio pessoal de Livancli Silvestre, desenvolvedor front-end. O site foi projetado para mostrar as habilidades, experiência e projetos da Livancli. Abaixo está uma visão geral da estrutura e recursos do código:
 
